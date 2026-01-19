@@ -261,7 +261,6 @@ body {
     #right {
         height: 50%;
         width: 100%;
-        background-color: blue;
         position: relative;
         display: flex;
         flex-direction: column-reverse;
@@ -326,4 +325,5 @@ body {
         font-size: 20px;
         font-weight: 500;
     }
+
 }
