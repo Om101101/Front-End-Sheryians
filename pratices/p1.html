@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: lightblue;
+        }
+
+
+
+        .form {
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    
+
+<!-- 1️⃣ User Greeting Card (Variables + DOM) -->
+<!-- <h1 id="he"> User Greeting Card</h1>
+<form action="">
+    <input id="name" type="text">
+    <button>Click Me</button>
+    <h2 id="h2"> Output</h2> 
+</form>-->
+
+
+<!-- 2️⃣ Age Eligibility Checker -->
+<!-- <h1> Age Validation</h1>
+<form action="">
+    Enter your age :- <input type="text" id="age"><br>
+    <button>click to check the age </button>
+    <h2 id="out"> Checking...</h2>
+</form> -->
+
+<!-- 4️⃣ Simple Calculator UI -->
+<!-- <h1 class="h1">4️⃣ Simple Calculator UI</h1>
+<form action="" class="form">
+    Number 1 :- <input type="text" id="one"> <br>
+    Number 2 :- <input type="text" name="" id="two"> <br>
+    <label for="  operator"> Select operator</label>
+    <select name="operator" id="ops">
+        <option option value="" disabled selected> Choose Operator</option>
+        <option value="+"> Addition </option>
+        <option value="-"> Subtraction </option>
+        <option value="*"> Multiplication </option>
+        <option value="/"> Division </option>
+    </select>
+    <button> Calculate</button>
+    <h2 id="result"> Result will be shown here</h2>
+</form> -->
+
+
+<!-- 5️⃣ Password Length Validator -->
+<!-- <h1 class="h1">5️⃣ Password Length Validator</h1>
+<form action="" class="form">
+    <label for="pass"> Password</label>
+    <input type="password" name="" id="pass"><br>
+    <button type="submit"> Submit</button>
+</form>
+ -->
+
+
+<!-- 6️⃣ Login System (Fake)
+<h1 class="h1">6️⃣ Login System (Fake)</h1>
+<form action="" class="form">
+    <label for="email">Email</label>
+    <input type="email" name="" id="mail"><br>
+    <label for="password">Password</label>
+    <input type="password" name="" id="pass"><br>
+    <button type="submit"> Check</button>
+</form> -->
+
+
+
+<!--7️⃣ To-Do List (Add + Delete)  -->
+<!-- 
+<h1 class="h1">To- DO List </h1>
+<form action="" class="form">
+    <label for="task"> Add task</label>
+    <input type="text" name="" id="task"> <br>
+    <button type="submit"> Add Task </button> <br>
+    <button id="del"> Delete</button>
+    <h2> Task Add hear</h2>
+</form> -->
+
+<!-- <h1 id="h1"> Om Jaiswal</h1> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="p1.js">
+
+</script>
+<!-- <script>
+    //1️⃣ User Greeting Card (Variables + DOM)
+    /*let nam = document.querySelector("#name");
+    let h2 = document.querySelector("#h2");
+    let button = document.querySelector("button");
+    button.addEventListener("click", function (dets) {
+        dets.preventDefault();
+        let userName = nam.value;
+        if (userName === "") {
+            h2.innerText = "Please enter your name.";
+        } else {
+            h2.innerText = "Hello, " + userName + "! Welcome to our website.";
+        }
+    })*/
+    //2️⃣ Age Eligibility Checker
+    /*let age = document.querySelector("#age");
+    let h2 = document.querySelector("#out");
+    let btn = document.querySelector("button");
+    btn.addEventListener("click", function (dets) {
+        dets.preventDefault();
+        let agee = age.value;
+        if (agee <= 18) {
+            out.innerText = "Your age is less";
+        }
+        else {
+            out.innerText = " Your Age is Eligibe for vote"
+        }
+
+    })*/
+    //4️⃣ Simple Calculator UI
+    /* let num1 = document.querySelector("#one");
+     let num2 = document.querySelector("#two");
+     let opr = document.querySelector("#ops");
+     let btn = document.querySelector("button");
+     let h2 = document.querySelector("#result");
+
+     btn.addEventListener("click", function (dets) {
+         dets.preventDefault();
+         let a = Number(num1.value);
+         let b = Number(num2.value);
+         let c = opr.value;
+         let ans;
+         switch (c) {
+             case "+":
+                 ans = a + b;
+                 break;
+             case "-":
+                 ans = a - b;
+                 break;
+             case "*":
+                 ans = a * b;
+                 break;
+             case "/":
+                 ans = a / b;
+                 break;
+             default:
+                 ans = "Select operator";
+                 break;
+         }
+         console.log(ans)
+         h2.innerText = "Result " + ans;
+     });*/
+    // Password Length Validator
+    /*let pass = document.querySelector("#pass");
+    let btn = document.querySelector("button");
+
+    btn.addEventListener("click", function (dets) {
+        dets.preventDefault();
+        let psw = pass.value.length;
+        if (psw <= 8) {
+            console.log("your lenght is to short")
+        }
+        else {
+            console.log("Length is okk")
+        }
+    })*/
+
+    //6️⃣ Login System (Fake)
+    /* let em = document.querySelector("#mail");
+     let pass = document.querySelector("#pass");
+     let btn = document.querySelector("button");
+
+     btn.addEventListener("click", function (dets) {
+         dets.preventDefault();
+         let eml = em.value;
+         let pwd = pass.value;
+         if (eml === "test@email.com" && pwd === "123456") {
+             console.log("Login Succesess")
+         }
+         else {
+             console.log("Error")
+         }
+     })*/
+
+    //7️⃣ To-Do List (Add + Delete)
+
+
+
+
+</script>
+
+
+ -->
+
+</body>
+
+</html>

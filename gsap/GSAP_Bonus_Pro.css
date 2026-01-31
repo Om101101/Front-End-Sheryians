@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#page1,
+#page3 {
+    height: 100vh;
+    background: lightblue;
+}
+
+#page2 {
+    min-height: 100vh;
+    background: lightcoral;
+    padding: 5vw;
+}
+
+#page2 h1 {
+    color: antiquewhite;
+    font-size: clamp(22px, 3vw, 48px);
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.2;
+    font-family: "Times New Roman", serif;
+}
+
+#page2 h1 span {
+    display: inline-block;
+    /* GSAP performance boost */
+}

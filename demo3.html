@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form And validation </title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: lightblue;
+        }
+
+        body {
+            font-family: Arial;
+            background: #ffb7b7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background: rgb(133, 223, 236);
+            padding: 20px;
+            width: 300px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 8px;
+            background: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #444;
+        }
+
+        #error {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+  <!--   <form autocomplete="off">
+        <h2>Login</h2>
+
+        <input type="email" placeholder="Enter Email" id="eml" required>
+        <small id="error"></small>
+
+        <input type="password" placeholder="Enter Password" id="pwd" required>
+        <small id="error"></small>
+
+        <button type="submit">Submit</button>
+    </form>
+ -->
+
+
+
+
+    <script>
+        // Form validation and error msg show 
+        /*let nm = document.querySelector("#name");
+        let form = document.querySelector("form");
+        form.addEventListener("submit", function (dets) {
+            dets.preventDefault();
+            if (nm.value.length <= 2) {
+                document.querySelector("#hidden").style.display = "initial"
+            }
+            else {
+                document.querySelector("#hidden").style.display = "none"
+
+            }
+        });*/
+
+        // Form validation 
+      /*  let eml = document.querySelector("#eml");
+        let pass = document.querySelector("#pwd");
+        let form = document.querySelector("form");
+        form.addEventListener("submit", function (dets) {
+            dets.preventDefault();
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+            let em1 = emailPattern.test(eml.value);
+            let passw = passwordPattern.test(pass.value);
+            if (!em1) {
+                document.querySelectorAll("#error").textContent = "Email is invalid";
+                document.querySelector("#error").style.display = "initial"
+            }
+            if (!passw) {
+                document.querySelectorAll("#error").textContent = "Password  is invalid";
+                document.querySelector("#error").style.display = "initial";
+            }
+        });*/
+
+
+    </script>
+</body>
+
+</html>

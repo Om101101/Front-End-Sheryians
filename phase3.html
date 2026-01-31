@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase 3 Add User Project </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!-- Add User Project Phase -3 -->
+
+<body>
+
+    <!-- <body class="bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 min-h-screen">
+    <form autocomplete="off"
+        class="bg-white/90 backdrop-blur rounded-2xl shadow-xl p-8 mb-12 w-full max-w-lg mx-auto mt-10 border border-blue-100">
+        <h2 class="text-3xl font-bold mb-6 text-center text-blue-700 tracking-tight">Add User</h2>
+        <div class="mb-5">
+            <label class="block text-gray-700 font-medium mb-2" for="name">Name</label>
+            <input
+                class="w-full px-4 py-2 border border-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+                type="text" id="name" name="name" required>
+        </div>
+        <div class="mb-5">
+            <label class="block text-gray-700 font-medium mb-2" for="role">Role</label>
+            <input
+                class="w-full px-4 py-2 border border-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+                type="text" id="role" name="role" required>
+        </div>
+        <div class="mb-5">
+            <label class="block text-gray-700 font-medium mb-2" for="bio">Bio</label>
+            <textarea
+                class="w-full px-4 py-2 border border-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+                id="bio" name="bio" rows="3" required></textarea>
+        </div>
+        <div class="mb-7">
+            <label class="block text-gray-700 font-medium mb-2" for="photo">Photo URL</label>
+            <input
+                class="w-full px-4 py-2 border border-blue-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+                type="url" id="photo" name="photo" required>
+        </div>
+        <button
+            class="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white py-3 rounded-lg font-semibold hover:from-blue-600 hover:to-purple-600 transition shadow-lg"
+            type="submit">Submit</button>
+    </form>
+    <div class="users grid grid-cols-1 md:grid-cols-3 gap-10 px-6 max-w-6xl mx-auto">
+
+    </div>
+ -->
+
+
+
+
+
+    <script>
+
+
+
+        /*Add User Project Phase -3
+        
+                let form = document.querySelector("form");
+                let username = document.querySelector("#name");
+                let role = document.querySelector("#role");
+                let bio = document.querySelector("#bio");
+                let photo = document.querySelector("#photo");
+        
+                const userManager = {
+                    users: [],
+                    init: function () {
+                        form.addEventListener("submit", this.submitForm.bind(this));
+                    },
+                    submitForm: function (e) {
+                        e.preventDefault();
+                        this.addUser();
+                    },
+                    addUser: function () {
+                        this.users.push({
+                            username: username.value,
+                            role: role.value,
+                            bio: bio.value,
+                            photo: photo.value,
+                        });
+        
+                        form.reset();
+                        this.renderUi();
+                    },
+                    renderUi: function () {
+                        document.querySelector(".users").innerHTML = "";
+                        this.users.forEach(function (user) {
+                            const card = document.createElement("div");
+                            card.className =
+                                "bg-white/90 backdrop-blur rounded-2xl shadow-xl p-8 flex flex-col items-center border border-blue-100 hover:scale-105 transition";
+        
+                            // Image
+                            const img = document.createElement("img");
+                            img.className =
+                                "w-28 h-28 rounded-full object-cover mb-5 border-4 border-blue-200 shadow";
+                            img.src = user.photo;
+                            img.alt = "User Photo";
+                            card.appendChild(img);
+        
+                            // Name
+                            const name = document.createElement("h2");
+                            name.className = "text-2xl font-bold mb-1 text-blue-700";
+                            name.textContent = user.username;
+                            card.appendChild(name);
+        
+                            // Role
+                            const role = document.createElement("p");
+                            role.className = "text-purple-500 mb-2 font-medium";
+                            role.textContent = user.role;
+                            card.appendChild(role);
+        
+                            // Description
+                            const desc = document.createElement("p");
+                            desc.className = "text-gray-700 text-center";
+                            desc.textContent = user.bio;
+                            card.appendChild(desc);
+        
+                            // Finally, append the card wherever needed, for example:
+        
+                            document.querySelector(".users").appendChild(card);
+                        });
+                    },
+                    removeUser: function () { },
+                };
+        
+                userManager.init();*/
+    </script>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo2</title>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            overflow: hidden;
+            position: relative;
+            padding: 30px;
+        }
+
+
+
+
+        /*Mouser over and Out*/
+        /* #ab {
+            position: absolute;
+            transition: cubic-bezier(0.19, 1, 0.22, 1)1s;
+            width: 400px;
+            height: 400px;
+            background-color: rgb(253, 1, 9);
+        }*/
+    </style>
+</head>
+
+<body>
+<!-- question1 Total Characters in input 
+    <input type="text" placeholder=" Enter the char" id="inp1">
+    <h1>Number of char : <span id="s1">0</span> </h1>
+
+    <input type="text" placeholder="Enter the char " id="inp2">
+    <h1>Number of char left :<span id="s2">20</span></h1> -->
+
+    <script>
+        //Mouse Over and Mouse Out 
+        /* let ab = document.querySelector("#ab");
+          ab.addEventListener("mouseover", function () {
+              ab.style.backgroundColor = "yellow"
+          });
+          ab.addEventListener("mouseout", function () {
+              ab.style.backgroundColor = "red"
+          });*/
+
+
+
+        // Mouse Move
+        /*  window.addEventListener("mousemove", function (dets) {
+              console.log(dets);
+          });*/
+        // Ye ek code hai jo ki mouse move kar ke ek animation banata hai
+        /* let ab = document.querySelector("#ab");
+         window.addEventListener("mousemove", function (dets) {
+             ab.style.top = dets.clientY + "px";
+             ab.style.left = dets.clientX + "px";
+         });*/
+
+
+        // Events bubbling
+        /*----
+         let ab = document.querySelector("#nav");
+         ab.addEventListener("click", function () {
+             alert("clicked");
+         })---*/
+
+        //part 2
+        /* let ab = document.querySelector("ul");
+          ab.addEventListener("click", function (dets) {
+             dets.target.style.textDecoration = "line-through";
+              dets.target.style.color = "green";
+              dets.target.style.backgroundColor = "lightpink";
+         });*/
+
+        //part 3
+        /* let abcd = document.querySelector("ul");
+         abcd.addEventListener("click", function (dets) {
+             dets.target.classList.toggle("tl")
+         });*/
+
+
+
+        // Event Capturing ka example hai samjhne ke liye  ye example hai kaise Event capturing work karta hai 
+
+        /*-----  let a = document.querySelector(".a");
+          let b = document.querySelector(".b");
+          let c = document.querySelector(".c");
+          let btn = document.querySelector("button");
+  
+          btn.addEventListener("click", function () {
+              console.log("button has been clicked");
+          });
+  
+          c.addEventListener("click", function () {
+              console.log("C has been clicked");
+          }, true);
+          b.addEventListener("click", function () {
+              console.log(" B has been clicked");
+          });
+          a.addEventListener("click", function () {
+              console.log("A has been clicked");
+          }, true);-----*/
+
+
+
+        //question1 Total Characters in input 
+       /* let inp1 = document.querySelector("#inp1");
+        let spn1 = document.querySelector("#s1");
+        inp1.addEventListener("input", function () {
+            spn1.textContent = inp1.value.length;
+        });
+
+        let inp2 = document.querySelector("#inp2");
+        let spn2 = document.querySelector("#s2");
+        inp2.addEventListener("input", function () {
+
+            let left = 20 - inp2.value.length;
+             spn2.textContent = left;
+            if (left < 0) {
+                spn2.style.color = "red";
+            }
+            else {
+                spn2.style.color = "black";
+            }
+        })*/
+
+
+
+
+    </script>
+</body>
+
+</html>
