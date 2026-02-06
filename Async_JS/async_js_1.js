@@ -187,8 +187,11 @@ console.log(gen.next().value);
 var nums =Array.from({length:100}, (_,b)=>b+1)
 new Worker("worker.js");
 Worker.postMessage(nums)
+Worker.onmessage=function(data){
+  console.log(data)
+}
 
 // accept the second data in new file 
 onmessage = function(data){
-    console.log(data);
+   const ans = data.data.reduce ((acc,item)=>item+acc,0);
 }
