@@ -1,4 +1,4 @@
-SetTimeOut
+/* SetTimeOut
 setTimeout(function () {
     console.log("Om Jaiswal")
 }, 5000);
@@ -194,4 +194,4 @@ Worker.onmessage=function(data){
 // accept the second data in new file 
 onmessage = function(data){
    const ans = data.data.reduce ((acc,item)=>item+acc,0);
-}
+} */
